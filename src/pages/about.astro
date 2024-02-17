@@ -1,9 +1,30 @@
 ---
+import Link from '../components/Link.astro';
 import MainLayout from '../layouts/MainLayout.astro'
 
 const title = 'About';
 ---
 
 <MainLayout title={title}>
-  <p>This is the <span>{title}</span> page</p>
+  <section class="contaien about" aria-label="About Me" >
+    <img 
+      src="/images/headshot.jpg" 
+      alt="My headshot" 
+      width="200"
+      height="330"
+    />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti recusandae facilis dolorem labore sapiente et expedita nemo perferendis temporibus neque ex tenetur nihil. Reprehenderit placeat aliquam temporibus nemo deleniti eveniet repellat facilis, minus quas obcaecati. Possimus repellendus illum earum cumque unde ipsam, libero eos dicta nemo consequuntur!</p>
+      <Link  
+        href='mailto:montexpress.ane@gmail.com'
+        text='Contact Me'
+        style='primary'
+        icon={{
+          name: "mailto",
+          side: "right"
+        }}
+      />
+    </div>
+  </section>
 </MainLayout>

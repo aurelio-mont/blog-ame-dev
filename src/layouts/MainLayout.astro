@@ -20,7 +20,9 @@ const {
 	<MainHead {title} {description} />
 	<body>
         <Nav />
-		<slot />
-        <Footer />
+        <main>
+            <slot />
+        </main>
+		<Footer />
 	</body>
 </html>
