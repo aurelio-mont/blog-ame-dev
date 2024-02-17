@@ -1,5 +1,12 @@
 const navData = [
     {
+        name: "Home",
+        path: "/",
+        icon: {
+            name: "home",
+        } 
+    },
+    {
         name: "About",
         path: "/about/",
         icon: {
